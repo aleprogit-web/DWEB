@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <img class="infinito" src="images/loop.png">
+    <h1 class="title">DevOps</h1>
+    
+    <div class="nav">
+      <a href="#introducao" class="header-button">Introdução</a>
+      <a href="#conceitos" class="header-button">Conceitos</a>
+      <a href="#beneficios" class="header-button">Benefícios</a>
+      <a href="#desafios" class="header-button">Desafios</a>
+      <a href="#conclusao" class="header-button">Conclusão</a>
+    </div>
+      
+  </header>
+
+  <main>
+    <section id="introducao" class="introducao-section">
+      <div class="introducao">
+        <p class="devops-subtitle">O QUE É DEVOPS?</p>
+        <p class="devops-title">DevOps</p>
+        <p class="introducao-texto">
+          DevOps é uma abordagem de desenvolvimento e operação de software que reúne práticas de colaboração, automação, integração contínua, entrega contínua e melhoria contínua. Seu principal objetivo é reduzir a separação tradicional entre as equipes de desenvolvimento e operações, permitindo que mudanças sejam entregues ao ambiente de produção com maior velocidade, previsibilidade e qualidade. A literatura acadêmica também evidencia que DevOps não deve ser entendido apenas como um conjunto de ferramentas, mas como uma transformação que envolve cultura, processos, pessoas e tecnologia.
+        </p>
+      </div>
+
+      <div class="resumo">
+        <p class="resumo-title">Em resumo</p>
+        <p class="resumo-texto">
+          Estudos sobre o tema apontam benefícios relacionados à frequência de entregas, redução do tempo entre uma alteração e sua disponibilização, melhoria da comunicação e maior integração entre as equipes. Entretanto, a adoção apresenta dificuldades, principalmente relacionadas à resistência cultural, à falta de capacitação, à ausência de processos padronizados, à segurança e à integração de diferentes ferramentas e ambientes.
+          Esta pesquisa apresenta os principais conceitos e resultados encontrados na literatura sobre DevOps, destacando seus benefícios, práticas fundamentais e desafios de adoção nas organizações.
+        </p>
+      </div>
+      
+    </section>
+
+    <section id="conceitos" class="conceitos-section">
+      <div class="conceito-intro">
+      <div class="conceito-texto-intro">
+        <div class="conceitos-title">
+          <img class="light-icon" src="images/lighting-bulb.png">
+          <h3 class="conceitos-titulo">2.CONCEITOS</h3>
+          </div>
+
+          <p class="conceito-texto">
+            A literatura caracteriza DevOps como uma combinação de cultura, colaboração, automação e práticas de entrega contínua. A proposta é aproximar as áreas envolvidas no ciclo de vida do software, diminuindo silos organizacionais e criando responsabilidade compartilhada pela entrega e operação dos sistemas (MISHRA; OTAIWI, 2020; ERICH; AMRIT; DANEVA, 2017).
+          </p>
+
+          <p class="conceito-texto">
+            Nesse contexto, a automação assume papel central. Processos como integração contínua, testes automatizados, entrega contínua e infraestrutura como código permitem reduzir atividades manuais e aumentar a consistência dos ambientes. Monitoramento contínuo e ciclos de feedback também contribuem para identificar problemas rapidamente e promover melhoria contínua.
+          </p>
+        </div>
+
+        <img class="laptop-img" src="images/laptop.png">
+      </div>
+
+      
+      <div class="conceitos-topicos">
+        <img class="users-icon" src="images/multiple-users-silhouette.png">
+
+        <div class="conceitos-topico-section">
+          <h4 class="conceitos-topico">2.1.Cultura e colaboração</h4>
+          <p class="conceitos-topico-texto">
+            A transformação cultural é apontada como uma das condições mais importantes para a adoção sustentável de DevOps. A simples implantação de ferramentas não elimina as barreiras existentes entre desenvolvimento, operações e segurança. É necessário estabelecer comunicação, colaboração e objetivos compartilhados. Díaz et al. (2021) destacam que organizações buscam principalmente acelerar o time-to-market sem comprometer a qualidade.
+          </p>
+
+          <h4 class="conceitos-topico">2.2.Automação e CI/CD</h4>
+          <p class="conceitos-topico-texto">
+            A integração contínua e a entrega contínua, conhecidas como CI/CD, automatizam etapas do ciclo de desenvolvimento, incluindo construção, testes e disponibilização do software. Essa automação pode aumentar a frequência de deploys e reduzir o tempo necessário para levar uma alteração até a produção (ALMEIDA; SIMÕES; LOPES, 2022).
+          </p>
+
+          <h4 class="conceitos-topico">2.3.Infraestrutura como código e monitoramento</h4>
+          <p class="conceitos-topico-texto">
+            A infraestrutura como código, ou IaC, permite representar e gerenciar recursos de infraestrutura por meio de arquivos e configurações versionáveis. Associada ao monitoramento contínuo, essa prática favorece padronização, escalabilidade e rastreabilidade das operações. Dessa forma, a infraestrutura passa a fazer parte do mesmo fluxo automatizado utilizado no desenvolvimento.
+          </p>
+        </div>
+      </div>     
+    </section>
+
+    <section id="beneficios" class="beneficios-section">
+      <div class="beneficios-title">
+        <img class="star-icon" src="images/star.png">
+        <h3 class="beneficios-titulo">3.PRINCIPAIS BENEFÍCIOS DO DEVOPS</h3>
+      </div>
+      
+      <div class="beneficios-texto-section">
+        <div class="beneficios-info">
+          <p class="beneficios-texto">
+            Os estudos analisados indicam ganhos recorrentes em velocidade de entrega, qualidade e integração entre equipes. DevOps tende a aumentar a frequência de deploys e diminuir o tempo entre uma mudança e sua disponibilização em produção, sem necessariamente reduzir a qualidade do software (MISHRA; OTAIWI, 2020; DÍAZ et al., 2021).
+          </p>
+
+          <p class="beneficios-texto">
+            Um estudo multicaso recente citado na pesquisa relatou 45% de aumento na frequência de deployment, 38% de redução no lead time e 32% de redução na taxa de falhas de mudança em organizações com adoção madura de DevOps (ALAMIN, 2025). Esses números devem ser interpretados como resultados de organizações e contextos específicos, e não como efeitos garantidos para qualquer empresa.
+          </p>
+
+          <p class="beneficios-texto">
+            Outro benefício importante é a melhoria da comunicação. A aproximação entre desenvolvimento e operações favorece o compartilhamento de informações, a identificação de problemas e a responsabilidade conjunta sobre os resultados. A combinação de Agile e DevOps também pode contribuir para automação, comunicação e redução do time-to-market (ALMEIDA; SIMÕES; LOPES, 2022).
+          </p>
+        </div>
+
+        <img class="rocket-img" src="images/spring-swing-rocket.png">
+      </div>
+    </section>
+
+    <section id="desafios" class="desafios-section">
+      <div class="desafios-title">
+        <img class="extension-icon" src="images/extension.png">
+        <h3 class="desafios-titulo">4.DESAFIOS</h3>
+      </div>
+
+      <div class="desafios-texto-section">
+        <div class="desafios-info">
+          <p class="desafios-texto">
+            Apesar dos benefícios, a adoção de DevOps envolve mudanças organizacionais significativas. A resistência cultural e a permanência de estruturas em silos dificultam a colaboração entre desenvolvimento, operações e segurança. A literatura também destaca que mudanças de processos e responsabilidades podem encontrar resistência quando não são acompanhadas de comunicação e capacitação adequadas.
+          </p>
+
+          <p class="desafios-texto">
+            A falta de conhecimento especializado, treinamento e profissionais qualificados também pode atrasar a transformação. Além disso, algumas organizações ainda apresentam dificuldades para estabelecer diretrizes e frameworks padronizados que permitam avaliar a maturidade da adoção de DevOps (HAMZA; ABDULLAH; SYED-MOHAMAD, 2024).
+          </p>
+
+          <p class="desafios-texto">
+            Outros gargalos recorrentes incluem segurança, dívida técnica, integração entre diferentes ferramentas e escalabilidade. Portanto, uma implementação eficiente exige planejamento e avaliação contínua dos processos, e não apenas aquisição de novas tecnologias.
+          </p>
+
+        </div>
+
+        <img class="puzzle-icon" src="images/puzzle.png">
+      </div>
+      
+    </section>
+
+    <section id="conclusao" class="conclusao-section">
+      <div class="conclusao-title">
+        <img class="notepad-icon" src="images/notepad.png">
+        <h3 class="conclusao-title">5.CONCLUSÃO</h3>
+      </div>
+      
+      <p class="conclusao-texto">
+        A pesquisa demonstra que DevOps representa uma mudança na forma como as organizações desenvolvem, entregam e operam software. Seus benefícios estão associados principalmente à colaboração entre equipes, automação, integração contínua, entrega contínua, monitoramento e melhoria dos processos. A literatura analisada apresenta evidências de aumento da velocidade de entrega e de melhoria da integração organizacional.
+      </p>
+
+      <p class="conclusao-texto">
+        Entretanto, os resultados também mostram que a adoção de DevOps não depende exclusivamente de ferramentas. Cultura organizacional, capacitação, comunicação, padronização e capacidade de integração são fatores fundamentais para que os benefícios sejam sustentáveis. Assim, organizações que pretendem adotar DevOps devem considerar a transformação como um processo contínuo envolvendo pessoas, processos e tecnologia.
+      </p>
+    </section>
+
+    <section class="referencias referencias-section">
+      <h3 class="referencias-titulo">REFERÊNCIAS</h3>
+
+      <ul>
+        <li class="ref-item">
+          ADEYINKA, A. Evaluating the impact of cloud-native DevOps practices on project delivery performance in agile environments. 2023. Disponível em: <a href="https://wjarr.com/.">https://wjarr.com/.</a> Acesso em: 15 ago. 2026.
+        </li>
+
+        <li class="ref-item">
+          ALMEIDA, F.; SIMÕES, J.; LOPES, S. Exploring the Benefits of Combining DevOps and Agile. Future Internet, v. 14, n. 2, 2022 ago. 2026.<a href="https://doi.org/10.3390/fi14020063">https://doi.org/10.3390/fi14020063.</a>Acesso em: 15 ago. 2026.
+        </li>
+
+        <li class="ref-item">
+          DÍAZ, J.; LÓPEZ-FERNÁNDEZ, D.; PÉREZ, J. E.; GONZÁLEZ-PRIETO, Á. Why are many businesses instilling a DevOps culture into their organization? Empirical Software Engineering, 2021. DOI: <a href="https://doi.org/10.1007/s10664-021-09999-2">https://doi.org/10.1007/s10664-021-09999-2.</a> Acesso em: 15 ago. 2026.
+        </li>
+
+        <li class="ref-item">
+          ERICH, F.; AMRIT, C.; DANEVA, M. A qualitative study of DevOps usage in practice. Journal of Software: Evolution and Process, 2017. DOI:<a href="https://doi.org/10.1002/smr.1885">https://doi.org/10.1002/smr.1885.</a>Acesso em: 15 ago. 2026.
+        </li>
+
+        <li class="ref-item">
+          HAMZA, U.; ABDULLAH, N. L.; SYED-MOHAMAD, S. DevOps Adoption Guidelines, Challenges and Benefits: A Systematic Literature Review. 2024. Disponível em:<a href="https://publisher.uthm.edu.my/ojs/index.php/jaraset">https://publisher.uthm.edu.my/ojs/index.php/jaraset.</a> Acesso em: 15 ago. 2026.
+        </li>
+
+        <li class="ref-item">
+          KARUNARATHNE, M. A. W.; WIJAYANAYAKE, W.; PRASADIKA, A. DevOps Adoption in Software Development Organizations: A Systematic Literature Review. 2024. Disponível em: <a href="https://ieeexplore.ieee.org/">https://ieeexplore.ieee.org/</a>. Acesso em: 15 ago. 2026.
+        </li>
+
+        <li class="ref-item"> 
+          MAHANTA, P. DevOps culture and its impact on cloud delivery and software development. 2016. Disponível em: <a href="https://ieeexplore.ieee.org/document/7576997">https://ieeexplore.ieee.org/document/7576997</a>. Acesso em: 15 ago. 2026.
+        </li>
+
+        <li class="ref-item">
+          MISHRA, A.; OTAIWI, Z. DevOps and software quality: A systematic mapping. Computer Science Review, 2020. DOI: <a href="https://doi.org/10.1016/j.cosrev.2020.100308">https://doi.org/10.1016/j.cosrev.2020.100308</a>. Acesso em: 15 ago. 2026.
+        </li>
+
+        <li class="ref-item">
+          OFFERMAN, T.; BLINDE, R.; STETTINA, C. J.; VISSER, J. A Study of Adoption and Effects of DevOps Practices. IEEE, 2022. DOI: <a href="https://doi.org/10.1109/ICE/ITMC-IAMOT55089.2022.10033325">https://doi.org/10.1109/ICE/ITMC-IAMOT55089.2022.10033325</a>. Acesso em: 15 ago. 2026.
+        </li>
+      </ul>
+    </section>
+  </main>
+    
+</body>
+</html>
