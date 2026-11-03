@@ -10,7 +10,7 @@
 
 # DWEB - Atividade 7
 
-🌐 **Acesse o site:** [Jokenpô](https://aleprogit-web.github.io/DWEB/Atividade%207/)
+🌐 **Acesse o site:** [Jokenpô](https://aleprogit-web.github.io/DWEB/Atividade%207/jogo.html)
 
 
 # DWEB - Atividade 8
