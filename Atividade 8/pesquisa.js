@@ -1,5 +1,3 @@
-
-
 let enviar = document.querySelector('.enviar');
 
 let avaliações = [];
@@ -20,7 +18,6 @@ enviar.addEventListener('click', () => {
   let sexo = document.querySelector('.sexo').value;
   let idade = document.querySelector('.idade-input').value;
   let opinião = document.querySelector('.opinião').value;
-  let idadeHTML = document.querySelector('.idade-input').value;
 
   if(sexo != "M" && sexo != "F" && sexo != "Outros" &&sexo != "m" && sexo != "f" && sexo != "outros" ){
     alert("O campo sexo deve ser preenchido apenas com M, F ou Outros.")
@@ -36,20 +33,15 @@ enviar.addEventListener('click', () => {
       Opinião: opinião
     });
 
-    idadeHTML.innerText = '';
-
     cont++;
 
-    if(cont >= 5){
+    if(cont >= 45){
       mostrarRestultados();
     };
 
     console.log(avaliações);
 
   }
-
-  
-
 });
 
 function mostrarRestultados () {
@@ -90,9 +82,9 @@ function mostrarRestultados () {
 
   });
 
-  contBom = (contBom *100) / 5;
+  contBom = (contBom *100) / 45;
 
-  contOtimo = (contOtimo *100) / 5;
+  contOtimo = (contOtimo *100) / 45;
 
   let media = somaIdades/5;
 
