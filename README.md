@@ -9,3 +9,6 @@ Projeto desenvolvido para a disciplina de Desenvolvimento Web.
 Projeto desenvolvido para a disciplina de Desenvolvimento Web.
 
 🌐 **Acesse o site:** [CatNews](https://aleprogit-web.github.io/DWEB/Atividade%204/)
+
+# Atividade 7 – Jokenpô
+[Visualizar atividade](https://aleprogit-web.github.io/DWEB/Atividade%207/jogo.html)
