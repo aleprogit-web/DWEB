@@ -1,0 +1,334 @@
+
+/* ===== Estilo geral ===== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.pagina-login {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+
+    background: linear-gradient(135deg, #e91e63, #d4145a);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172747;
+}
+
+/* ===== Card principal ===== */
+
+.card-acesso {
+    width: 100%;
+    max-width: 440px;
+    padding: 40px 36px 28px;
+
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 16px 45px rgba(105, 0, 42, 0.20);
+
+    text-align: center;
+    animation: aparecer 0.35s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Logo ===== */
+
+.logo-login {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #e91e63;
+    background: #fff0f6;
+    border: 1px solid #f8d5e3;
+    border-radius: 14px;
+
+    font-size: 24px;
+}
+
+.logo-login img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+/* ===== Títulos ===== */
+
+.card-acesso h1 {
+    margin-bottom: 10px;
+    color: #172747;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.descricao-login {
+    margin-bottom: 30px;
+    color: #78859e;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ===== Opções da primeira tela ===== */
+
+.opcoes-acesso {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: left;
+}
+
+.opcao-login {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 17px 15px;
+
+    color: inherit;
+    background: #ffffff;
+    border: 1px solid #e8eaf1;
+    border-radius: 12px;
+
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s,
+                transform 0.2s, box-shadow 0.2s;
+}
+
+.opcao-login:hover {
+    background: #fff7fa;
+    border-color: #e91e63;
+    box-shadow: 0 4px 12px rgba(233, 30, 99, 0.08);
+    transform: translateY(-2px);
+}
+
+.icone-opcao {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #e91e63;
+    background: #fff0f6;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.texto-opcao {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.texto-opcao strong {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.texto-opcao small {
+    color: #78859e;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.seta-opcao {
+    color: #a3aabe;
+    font-size: 13px;
+}
+
+/* ===== Formulário de login ===== */
+
+.card-entrar {
+    position: relative;
+    padding-top: 42px;
+}
+
+.voltar-login {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+
+    color: #78859e;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.voltar-login:hover {
+    color: #e91e63;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    text-align: left;
+}
+
+.campo-login {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo-login label {
+    color: #34415d;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.input-icone {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 0 13px;
+
+    border: 1px solid #e8c4d3;
+    border-radius: 9px;
+    background: #ffffff;
+
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-icone:focus-within {
+    border-color: #e91e63;
+    box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.09);
+}
+
+.input-icone > i {
+    color: #b17a91;
+    font-size: 15px;
+}
+
+.input-icone input {
+    width: 100%;
+    height: 47px;
+
+    color: #172747;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+}
+
+.input-icone input::placeholder {
+    color: #a3aabe;
+}
+
+.esqueceu-senha {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -7px;
+}
+
+.esqueceu-senha a {
+    color: #e91e63;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.esqueceu-senha a:hover {
+    color: #c81752;
+    text-decoration: underline;
+}
+
+/* ===== Botão entrar ===== */
+
+.btn-entrar {
+    width: 100%;
+    min-height: 48px;
+    margin-top: 3px;
+
+    color: #ffffff;
+    background: #e91e63;
+    border: none;
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-entrar:hover {
+    background: #c81752;
+}
+
+.btn-entrar:active {
+    transform: scale(0.99);
+}
+
+/* ===== Rodapé ===== */
+
+.rodape-login {
+    margin-top: 28px;
+    padding-top: 18px;
+
+    color: #9aa3b5;
+    border-top: 1px solid #f0e7ec;
+
+    font-size: 11px;
+}
+
+/* ===== Responsividade ===== */
+
+@media (max-width: 480px) {
+    body.pagina-login {
+        padding: 16px;
+    }
+
+    .card-acesso {
+        padding: 32px 22px 24px;
+        border-radius: 15px;
+    }
+
+    .card-entrar {
+        padding-top: 42px;
+    }
+
+    .card-acesso h1 {
+        font-size: 24px;
+    }
+
+    .logo-login {
+        width: 68px;
+        height: 68px;
+        font-size: 30px;
+    }
+}
+
+/* ===== Formulário de cadastro ===== */
+
+.card-cadastro {
+    max-width: 480px;
+}
+
+.card-cadastro .descricao-login {
+    margin-bottom: 22px;
+}
+
+.card-cadastro .form-login {
+    gap: 14px;
+}

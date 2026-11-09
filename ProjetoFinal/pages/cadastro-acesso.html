@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar acesso | Clínica</title>
+
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <script src="../js/autenticacao.js" defer></script>
+</head>
+
+<body class="pagina-login">
+
+    <main class="card-acesso card-entrar card-cadastro">
+
+        <a href="../pages/index.html" class="voltar-login">
+            <i class="fa-solid fa-arrow-left"></i> Voltar
+        </a>
+
+        <div class="logo-login">
+            <img src="../assets/imagens/liga-logo.png"
+                 alt="Logo da Liga Sorocabana de Combate ao Câncer">
+        </div>
+
+        <h1>Criar novo acesso</h1>
+
+        <p class="descricao-login">
+            Preencha os dados para cadastrar um novo usuário.
+        </p>
+
+        <form class="form-login" id="form-cadastro">
+
+            <div class="campo-login">
+                <label for="nome">Nome completo</label>
+
+                <div class="input-icone">
+                    <i class="fa-regular fa-user"></i>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome completo"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+            </div>
+
+            <div class="campo-login">
+                <label for="cpf">CPF</label>
+
+                <div class="input-icone">
+                    <i class="fa-regular fa-id-card"></i>
+                    <input
+                        type="text"
+                        id="cpf"
+                        name="cpf"
+                        placeholder="000.000.000-00"
+                        maxlength="14"
+                        inputmode="numeric"
+                        required
+                    >
+                </div>
+            </div>
+
+            <div class="campo-login">
+                <label for="email">E-mail</label>
+
+                <div class="input-icone">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="seuemail@gmail.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+            </div>
+
+            <div class="campo-login">
+                <label for="senha">Senha</label>
+
+                <div class="input-icone">
+                    <i class="fa-solid fa-lock"></i>
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Crie uma senha"
+                        autocomplete="new-password"
+                        required
+                    >
+                </div>
+            </div>
+
+            <div class="campo-login">
+                <label for="confirmar-senha">Confirmar senha</label>
+
+                <div class="input-icone">
+                    <i class="fa-solid fa-lock"></i>
+                    <input
+                        type="password"
+                        id="confirmar-senha"
+                        name="confirmar-senha"
+                        placeholder="Digite a senha novamente"
+                        autocomplete="new-password"
+                        required
+                    >
+                </div>
+            </div>
+
+            <button type="submit" class="btn-entrar">
+                Cadastrar
+            </button>
+
+        </form>
+
+        <p class="rodape-login">
+            Sistema de gerenciamento da clínica
+        </p>
+
+    </main>
+
+    <script>
+        
+        const form = document.getElementById('form-cadastro');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value.trim();
+            const cpf = document.getElementById('cpf').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const senha = document.getElementById('senha').value;
+            const confirmarSenha = document.getElementById('confirmar-senha').value;
+
+            if (senha !== confirmarSenha) {
+                alert('As senhas não coincidem!');
+                return;
+            }
+
+            const resultado = cadastrarUsuario(nome, cpf, email, senha);
+
+            if (!resultado.sucesso) {
+                alert(resultado.mensagem);
+                return;
+            }
+
+            alert(resultado.mensagem);
+
+            window.location.href = '../pages/entrar.html';
+        });
+
+    </script>
+
+</body>
+</html>
