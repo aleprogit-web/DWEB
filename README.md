@@ -17,6 +17,10 @@
 
 🌐 **Acesse o site:** [Avaliações](https://aleprogit-web.github.io/DWEB/Atividade%208/)
 
+# DWEB - Atividade 9
+
+🌐 **Acesse o site:** [Funções](https://aleprogit-web.github.io/DWEB/Atividade%209/)
+
 # DWEB - Projeto Final
 
 🌐 **Acesse o site:** [ProjetoFinal](https://aleprogit-web.github.io/DWEB/ProjetoFinal/)
